@@ -2,6 +2,7 @@ body {
   background-color: #F0F5F9;
   font-family: 'Open-Sans', sans-serif;
   font-weight: lighter;
+  margin: 0;
 }
 
 h1, h2, h3 {
@@ -36,14 +37,22 @@ ul {
   list-style: none;
 }
 
-.container {
-  width: 800px;
-  margin: 40 auto;
+.flex-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .section-white {
   background-color: white;
-  padding: 15px 10px;
+  padding: 15px;
   margin: 20px;
   border-radius: 15px;
   box-shadow: 2px 2px 3px lightgray;
@@ -68,12 +77,8 @@ ul {
 }
 
 #sidebar {
-  background-color: #ACBDC5;
-  position: fixed;
+  background-color: #C9D6DF;
   width: 115px;
-  left: 0;
-  top: 0;
-  bottom: 0;
   padding-top: 20px;
 }
 
@@ -96,6 +101,10 @@ ul {
 #profile-pic {
   width: 25%;
   border-radius: 50%;
+}
+
+#info {
+  padding: 50px;
 }
 
 @media (max-width: 960px) {
