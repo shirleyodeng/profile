@@ -97,7 +97,14 @@ ul {
 }
 
 #places img {
-  width: 350;
+   max-width:100%;
+   height:auto;
+   max-height:100%;
+   border-radius: 5px;
+}
+
+#travels {
+  padding: 20px;
 }
 
 #profile-pic {
